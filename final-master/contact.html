@@ -16,21 +16,21 @@
       function validate()
       {
       
-         if( document.myForm.fname.value == "" )
+         if( document.myForm.name.value == "" )
          {
             alert( "Please provide your name!" );
-            document.myForm.fname.focus() ;
+            document.myForm.name.focus() ;
             return false;
          }
          
-         if( document.myForm.email.value == "" )
+         else if( document.myForm.email.value == "" )
          {
             alert( "Please provide your Email!" );
             document.myForm.email.focus() ;
             return false;
          }
          
-         if( document.myForm.msg.value == "" )
+         else if( document.myForm.msg.value == "" )
          {
             alert( "Please write a message!" );
             document.myForm.msg.focus() ;
