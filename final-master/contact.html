@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/html5reset-1.6.1.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Contact</title>
+</head>
+
+
+<script>
+      function validate()
+      {
+      
+         if( document.myForm.fname.value == "" )
+         {
+            alert( "Please provide your name!" );
+            document.myForm.fname.focus() ;
+            return false;
+         }
+         
+         if( document.myForm.email.value == "" )
+         {
+            alert( "Please provide your Email!" );
+            document.myForm.email.focus() ;
+            return false;
+         }
+         
+         if( document.myForm.msg.value == "" )
+         {
+            alert( "Please write a message!" );
+            document.myForm.msg.focus() ;
+            return false;
+         }
+         
+         return( true );
+      }
+</script>
+
+
+<body>
+    <a class="skip-main" href="#main">Skip to main content</a>
+<header>
+    <p class="header">Contact</p>
+</header>
+    <nav>
+        <ul>
+            <li><a href = "index.html">Home</a></li>
+            <li><a href = "resume.html">Resume</a></li>
+            <li><a href = "photos.html">Photos</a></li>
+            <li><a class = "current-page" href = "contact.html">Contact</a></li>
+
+        </ul>
+    </nav>
+<main>
+<div class = "itemh">
+<h1 class = "grid-heading">Get in touch</h1>
+</div>
+
+<p class="contact" id="main" tabindex="-1">
+
+    <i class="fa fa-envelope-square" aria-hidden = "true"></i> Email: <a href="mailto:mdurow@umich.edu">mdurow@umich.edu</a>
+    <br><br>
+    <i class="fa fa-phone-square" aria-hidden = "true"></i> Phone: 810-841-6206
+    <br><br>
+    <i class="fa fa-linkedin" aria-hidden = "true"></i> LinkedIn: <a href="https://www.linkedin.com/in/mdurow/">Connect</a>
+    <br><br>
+</p>
+
+
+<div class="form_container">
+  <form name="myForm" action="/action_page.php" onsubmit="return validate()" method="post">
+
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name...">
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="email@email.com.">
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+
+</main>
+
+<footer>
+  <p class = "footer">
+    Morgan Durow<br>
+  &copy; <script type="text/javascript"> document.write(new Date().getFullYear());</script>
+</p>
+</footer>
+
+</body>
+</html>
